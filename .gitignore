@@ -31,3 +31,6 @@ coverage
 *.sln
 *.sw?
 
+# Build artifacts
+tsconfig.tsbuildinfo
+
