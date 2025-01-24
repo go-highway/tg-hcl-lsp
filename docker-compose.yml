@@ -1,0 +1,11 @@
+name: 'tg-hcl-lsp'
+services:
+  tg-hcl-lsp:
+    image: "tg-hcl-lsp"
+    pull_policy: never
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    volumes:
+      - ./:/usr/src/app/:cached
